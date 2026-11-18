@@ -3,4 +3,4 @@ Módulo de persistencia y base de datos relacional en Microsoft SQL Server (Tran
 
 ## Diagrama de base de datos
 El presente diagrama es una representación relacional de las entidades que conforman el sistema de la base de datos SQL.
-![Diagrama de bases de datos "Mentorias"](./Diagram/Mentorias.jpg?raw=true "Diagrama de bases de datos Mentorias")
+![Diagrama de bases de datos "Mentorias"](./Diagram/MentoriasER.jpg?raw=true "Diagrama de bases de datos Mentorias")
