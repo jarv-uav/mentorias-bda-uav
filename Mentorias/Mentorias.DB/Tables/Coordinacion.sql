@@ -1,10 +1,3 @@
-USE [Proyectos]
-GO
-
-/****** Objeto: Table [dbo].[Coordinacion] Fecha de script: 19/11/2026 04:42:37 p. m. ******/
-SET ANSI_NULLS ON
-GO
-
 SET QUOTED_IDENTIFIER ON
 GO
 
