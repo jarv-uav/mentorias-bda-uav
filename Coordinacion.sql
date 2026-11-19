@@ -1,0 +1,23 @@
+USE [Proyectos]
+GO
+
+/****** Objeto: Table [dbo].[Coordinacion] Fecha de script: 19/11/2026 04:42:37 p. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Coordinacion](
+	[idcoordinador] [nvarchar](10) NOT NULL,
+	[nombre] [nvarchar](20) NOT NULL,
+	[apellido_paterno] [nvarchar](20) NOT NULL,
+	[apellido_materno] [nvarchar](20) NULL,
+	[correo_institucional] [nvarchar](20) NOT NULL,
+ CONSTRAINT [PK_Coordinacion] PRIMARY KEY CLUSTERED 
+(
+	[idcoordinador] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
