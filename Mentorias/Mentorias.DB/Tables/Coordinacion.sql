@@ -1,6 +1,3 @@
-SET QUOTED_IDENTIFIER ON
-GO
-
 CREATE TABLE [dbo].[Coordinacion](
 	[idcoordinador] [nvarchar](10) NOT NULL,
 	[nombre] [nvarchar](20) NOT NULL,
