@@ -1,0 +1,12 @@
+CREATE TABLE [dbo].[Semaforo](
+	[idsemaforo] [int] IDENTITY(1,1) NOT NULL,
+	[semaforo] [varchar](10) NOT NULL,
+	[descripcion] [varchar](50) NULL,
+	[color] [varchar](6) NULL,
+ CONSTRAINT [PK_Semaforo] PRIMARY KEY CLUSTERED 
+(
+	[idsemaforo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
