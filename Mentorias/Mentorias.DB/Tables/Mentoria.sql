@@ -1,4 +1,3 @@
-IF OBJECT_ID('dbo.Mentoria', 'U') IS NOT NULL DROP TABLE dbo.Mentoria;
 CREATE TABLE dbo.Mentoria (
     idmentoria INT IDENTITY(1,1) NOT NULL,
     fecha_propuesta DATE NOT NULL,
