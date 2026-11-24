@@ -56,5 +56,25 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="Scripts" />
+    <Folder Include="StoredProcedures\Alumno" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Alumno.sql" />
+    <Build Include="Tables\Carrera.sql" />
+    <Build Include="Tables\Carrera_Mentor.sql" />
+    <Build Include="Tables\Coordinacion.sql" />
+    <Build Include="Tables\Escuela.sql" />
+    <Build Include="Tables\EstadoMentoria.sql" />
+    <Build Include="Tables\HorarioDisponible.sql" />
+    <Build Include="Tables\Mentor.sql" />
+    <Build Include="Tables\Semaforo.sql" />
+    <Build Include="StoredProcedures\Alumno\SP_AddAlumno.sql" />
+    <Build Include="StoredProcedures\Alumno\SP_DelAlumno.sql" />
+    <Build Include="StoredProcedures\Alumno\SP_GetAlumno.sql" />
+    <Build Include="StoredProcedures\Alumno\SP_UpdAlumno.sql" />
+    <Build Include="StoredProcedures\Alumno\SP_UpdEstadoAlumno.sql" />
   </ItemGroup>
 </Project>
