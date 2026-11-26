@@ -3,7 +3,8 @@ CREATE PROCEDURE [dbo].[SP_AddCoordinacion]
     @nombre NVARCHAR(20),
     @apellido_paterno NVARCHAR(20),
     @apellido_materno NVARCHAR(20) = NULL,
-    @correo_institucional NVARCHAR(20)
+    @correo_institucional NVARCHAR(20),
+    @estado BIT = 1
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -46,14 +47,16 @@ BEGIN
             [nombre],
             [apellido_paterno],
             [apellido_materno],
-            [correo_institucional]
+            [correo_institucional],
+            [estado]
         )
         VALUES (
             @idCoordLimpio,
             @nombreLimpio,
             @apPatLimpio,
             @apMatLimpio,
-            @correoLimpio
+            @correoLimpio,
+            @estado
         );
 
         COMMIT TRANSACTION;

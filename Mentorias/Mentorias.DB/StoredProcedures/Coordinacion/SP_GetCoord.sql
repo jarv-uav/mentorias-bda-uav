@@ -11,7 +11,8 @@ BEGIN
         [nombre],
         [apellido_paterno],
         [apellido_materno],
-        [correo_institucional]
+        [correo_institucional],
+        [estado]
     FROM [dbo].[Coordinacion]
     WHERE (@idCoordLimpio IS NULL OR [idcoordinador] = @idCoordLimpio)
     ORDER BY [apellido_paterno], [apellido_materno], [nombre];
