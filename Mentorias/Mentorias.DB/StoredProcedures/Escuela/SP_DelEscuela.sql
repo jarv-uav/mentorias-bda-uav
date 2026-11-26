@@ -10,8 +10,7 @@ BEGIN
         RETURN;
     END
 
-    UPDATE [dbo].[Escuela]
-    SET estado = 0
+    DELETE FROM [dbo].[Escuela]
     WHERE idescuela = @idescuela;
 END
 GO

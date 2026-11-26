@@ -1,5 +1,6 @@
 CREATE PROCEDURE [dbo].[SP_GetEscuela]
-    @idescuela INT = NULL
+    @idescuela INT = NULL,
+    @estado BIT = NULL
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -7,6 +8,6 @@ BEGIN
     SELECT idescuela, nombre, estado
     FROM [dbo].[Escuela]
     WHERE (@idescuela IS NULL OR idescuela = @idescuela)
-      AND estado = 1;
+      AND (@estado IS NULL OR estado = @estado);
 END
 GO

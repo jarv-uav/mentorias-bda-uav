@@ -1,6 +1,7 @@
 CREATE PROCEDURE [dbo].[SP_UpdEscuela]
     @idescuela INT,
-    @nombre VARCHAR(50)
+    @nombre VARCHAR(50),
+    @estado BIT
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -18,7 +19,8 @@ BEGIN
     END
 
     UPDATE [dbo].[Escuela]
-    SET nombre = @nombre
+    SET nombre = @nombre,
+        estado = @estado
     WHERE idescuela = @idescuela;
 END
 GO
